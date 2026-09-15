@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Module name="Class B" id="03608585-544d-43c4-969d-a4b6c47dd933" version="1.0.0">
+    <ConfigRoot path="config/module.py"/>
+</Module>
