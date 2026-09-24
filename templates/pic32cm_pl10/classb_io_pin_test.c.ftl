@@ -60,7 +60,7 @@
 void CLASSB_IO_InputSamplingEnable(CLASSB_PORT_INDEX port, CLASSB_PORT_PIN pin);
 ------------------------------------------------------------------------------
 Purpose: Enable input sampling for a pin
-Input  : None.
+Input  : PORT index and pin number.
 Output : None.
 Notes  : Before testing an output pin, call this function to enable input
          sampling, so that the 'IN' register will have the data from the
