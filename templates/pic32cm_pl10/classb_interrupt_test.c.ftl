@@ -157,6 +157,7 @@ static void sCLASSB_RTC_Init(void)
         // Wait for Synchronization after Software Reset
         ;
     }
+    // Configure RTC to generate compare interrupt
     RTC_REGS->MODE0.RTC_CTRLA = RTC_MODE0_CTRLA_MODE(0) | RTC_MODE0_CTRLA_PRESCALER(0x1) | RTC_MODE0_CTRLA_MATCHCLR_Msk ;
     RTC_REGS->MODE0.RTC_COMP = CLASSB_INTR_TEST_RTC_COUNT;
     RTC_REGS->MODE0.RTC_INTENSET = RTC_MODE0_INTENSET_CMP0_Msk;
@@ -211,6 +212,11 @@ static void sCLASSB_TC0_CompareInit( void )
     TC0_REGS->COUNT16.TC_INTFLAG = TC_INTFLAG_Msk;
     TC0_REGS->COUNT16.TC_INTENSET |= TC_INTENSET_OVF_Msk;
     TC0_REGS->COUNT16.TC_CTRLA |= TC_CTRLA_ENABLE_Msk;
+    while((TC0_REGS->COUNT16.TC_SYNCBUSY & TC_SYNCBUSY_ENABLE_Msk) == TC_SYNCBUSY_ENABLE_Msk)
+    {
+        // Wait for synchronization
+        ;
+    }
 
     // Enable NVIC IRQn for TC0
     NVIC_EnableIRQ(TC0_IRQn);
