@@ -66,7 +66,7 @@ static uint32_t sCLASSB_Clock_SysTickGetVal(void)
 ------------------------------------------------------------------------------
 Purpose: Reads the VAL register of the SysTick
 Input  : None.
-Output : None.
+Output : Return the Current value of the SystTick Counter
 Notes  : None.
 ============================================================================*/
 static uint32_t sCLASSB_Clock_SysTickGetVal ( void )
@@ -134,10 +134,10 @@ static void sCLASSB_Clock_RTC_ClockInit(void)
 }
 
 /*============================================================================
-static void sCLASSB_Clock_RTC_Init(void)
+static void sCLASSB_Clock_RTC_Init(uint32_t test_cycles)
 ------------------------------------------------------------------------------
 Purpose: Configure RTC peripheral for CPU clock self-test
-Input  : None.
+Input  : Test duration (in RTC cycles)
 Output : None.
 Notes  : The clocks required for RTC are configured in a separate function.
 ============================================================================*/
@@ -161,7 +161,10 @@ CLASSB_TEST_STATUS CLASSB_ClockTest(uint32_t cpu_clock_freq,
     uint8_t clock_test_rtc_cycles,
     bool running_context);
 ------------------------------------------------------------------------------
-Purpose: Check whether CPU clock frequency is within acceptable limits.
+Purpose: Checks whether CPU clock frequency is within acceptable limits.
+         This self-test can be used during startup as well as run-time.
+         This self-test shall be used only if there is an external 32.768 kHz
+         accurate crystal connected to the XOSC32K of the microcontroller.
 Input  : Expected CPU clock frequency value, acceptable error percentage,
          test duration (in RTC cycles) and running context.
 Output : Test status.
