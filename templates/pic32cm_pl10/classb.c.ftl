@@ -499,6 +499,8 @@ Notes  : This function is called from Reset_Handler.
 void _on_reset(void)
 #elif     (defined (__CC_ARM)) || (defined (__ARMCC_VERSION))
 void __attribute__((used)) _on_reset(void)
+#else
+#error "classb: unsupported toolchain — expected XC32 or Keil ARM (__CC_ARM/__ARMCC_VERSION)"
 #endif
 {
     CLASSB_STARTUP_STATUS startup_tests_status = CLASSB_STARTUP_TEST_FAILED;
