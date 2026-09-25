@@ -189,17 +189,17 @@ static CLASSB_TEST_STATUS sCLASSB_SRAM_MarchTest(uint32_t * start_addr,
         if (march_algo == CLASSB_SRAM_MARCH_C)
         {
             march_test_retval = CLASSB_RAMMarchC(iteration_start_addr,
-                CLASSB_SRAM_TEST_BUFFER_SIZE);
+                march_c_short_itr_size);
         }
         else if (march_algo == CLASSB_SRAM_MARCH_C_MINUS)
         {
             march_test_retval = CLASSB_RAMMarchCMinus(iteration_start_addr,
-                CLASSB_SRAM_TEST_BUFFER_SIZE);
+                march_c_short_itr_size);
         }
         else if (march_algo == CLASSB_SRAM_MARCH_B)
         {
             march_test_retval = CLASSB_RAMMarchB(iteration_start_addr,
-                CLASSB_SRAM_TEST_BUFFER_SIZE);
+                march_c_short_itr_size);
         }
         else
         {
@@ -272,6 +272,7 @@ CLASSB_TEST_STATUS CLASSB_SRAM_MarchTestInit(uint32_t * start_addr,
      */
 
     if ((((uint32_t)start_addr % 4U) != 0U)
+            || (start_addr == NULL) 
             || ((test_size_bytes % 4U) != 0U)
             || (march_test_end_address > CLASSB_SRAM_FINAL_WORD_ADDRESS)
             || (mem_start_address < CLASSB_SRAM_APP_AREA_START))
