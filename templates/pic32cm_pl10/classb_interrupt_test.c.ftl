@@ -147,6 +147,15 @@ Notes  : The clocks required for RTC are enabled after reset. This function
 ============================================================================*/
 static void sCLASSB_RTC_Init(void)
 {
+    // Enable APB clock for RTC
+    MCLK_REGS->MCLK_APBAMASK |= MCLK_APBAMASK_RTC_Msk;
+
+    // Configure 32K External Oscillator
+    OSC32KCTRL_REGS->OSC32KCTRL_XOSC32KCTRL = OSC32KCTRL_XOSC32KCTRL_ENABLE_Msk | OSC32KCTRL_XOSC32KCTRL_XTALEN_Msk;
+    while(!((OSC32KCTRL_REGS->OSC32KCTRL_STATUS & OSC32KCTRL_STATUS_XOSC32KRDY_Msk) == OSC32KCTRL_STATUS_XOSC32KRDY_Msk))
+    {
+        // Wait for the XOSC32K Ready state
+    }
     // Select the RTC clock
     OSC32KCTRL_REGS->OSC32KCTRL_RTCCTRL = OSC32KCTRL_RTCCTRL_RTCSEL_XOSC32K;
     // Enable APB clock for RTC
