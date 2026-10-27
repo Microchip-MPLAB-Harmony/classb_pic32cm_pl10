@@ -61,6 +61,7 @@
     <#if CLASSB_FLASH_CRC_CONF == true>
 #define CLASSB_FLASH_CRC32_ADDR             (0x${CLASSB_FLASHCRC_ADDR}U)
 #define CLASSB_FLASH_START_ADDR             (0x${CLASSB_FLASH_START_ADDRESS}U)
+#define CLASSB_FLASH_SIZE                   (${CLASSB_FLASH_SIZE}U)
     </#if>
 </#if>
 /* RTC is clocked from 32768 Hz Crystal for CPU clock test.
@@ -405,7 +406,7 @@ static CLASSB_STARTUP_STATUS sCLASSB_Startup_Tests(void)
             <#lt>    // Clear WDT before test
             <#lt>    WDT_REGS->WDT_CLEAR = WDT_CLEAR_CLEAR_KEY;
             <#lt>    // Flash test. Read CRC-32 and verify it
-            <#lt>    cb_test_status = CLASSB_FlashCRCTest(CLASSB_FLASH_START_ADDR, CLASSB_FLASH_CRC32_ADDR,
+            <#lt>    cb_test_status = CLASSB_FlashCRCTest(CLASSB_FLASH_START_ADDR, CLASSB_FLASH_SIZE,
             <#lt>       *(uint32_t *)CLASSB_FLASH_CRC32_ADDR, false);
             <#lt>    if (cb_test_status == CLASSB_TEST_PASSED)
             <#lt>    {
