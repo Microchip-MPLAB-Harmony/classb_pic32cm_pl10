@@ -4,7 +4,7 @@
    <urls>
       <url>
          <loc>GUID-BFDAF076-16B0-43EE-9EC9-AC8CBD62EA89.html</loc>
-         <lastmod>2026-10-14T09:47:22</lastmod>
+         <lastmod>2026-11-10T09:35:52</lastmod>
          <title>1 MPLAB® Harmony Class B Library for PIC32CM PL10 Devices</title>
          <description>The Class B Library provides APIs to perform self-tests for the on-board systems of the microcontroller.Features Tested by the Class B LibraryComponents tested by the Class B libraryComponent ...</description>
          <urls/>
@@ -52,14 +52,14 @@
             </url>
             <url>
                <loc>GUID-8048DDDE-F5DA-4EA6-990E-F05640E1AFA2.html</loc>
-               <lastmod>2026-10-14T09:56:14</lastmod>
+               <lastmod>2026-11-10T08:41:35</lastmod>
                <title>2.6 CLASSB_FlashCRCTest</title>
                <description>CLASSB_TEST_STATUS CLASSB_FlashCRCTest(uint32_t start_addr, uint32_t test_size, uint32_t crc_val, bool</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-FDCA2115-AE93-4353-8B36-CB0E8D11765D.html</loc>
-               <lastmod>2026-10-14T09:58:27</lastmod>
+               <lastmod>2026-10-28T07:09:40</lastmod>
                <title>2.7 CLASSB_SRAM_MarchTestInit</title>
                <description>CLASSB_TEST_STATUS CLASSB_SRAM_MarchTestInit(uint32_t * start_addr, uint32_t test_size_bytes, CLASSB_SRAM_MARCH_ALGO march_algo, bool</description>
                <urls/>
@@ -72,30 +72,37 @@
                <urls/>
             </url>
             <url>
+               <loc>GUID-51C51C9E-4221-4E61-BD39-B45DFEC9821B.html</loc>
+               <lastmod>2026-11-10T08:46:35</lastmod>
+               <title>2.9 CLASSB_IO_InputSamplingEnable</title>
+               <description>void CLASSB_IO_InputSamplingEnable(CLASSB_PORT_INDEX port, CLASSB_PORT_PIN</description>
+               <urls/>
+            </url>
+            <url>
                <loc>GUID-80135420-10A6-42DC-AB3E-3A20EDE3C865.html</loc>
-               <lastmod>2026-10-14T09:57:35</lastmod>
-               <title>2.9 CLASSB_RST_IOTest</title>
-               <description>CLASSB_TEST_STATUS CLASSB_RST_IOTest(CLASSB_PORT_INDEX port, CLASSB_GPIO_PIN pin, CLASSB_GPIO_PIN_STATE</description>
+               <lastmod>2026-11-10T08:46:29</lastmod>
+               <title>2.10 CLASSB_RST_IOTest</title>
+               <description>CLASSB_TEST_STATUS CLASSB_RST_IOTest(CLASSB_PORT_INDEX port, CLASSB_PORT_PIN pin, CLASSB_PORT_PIN_STATE</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-63B5DDFD-7183-4FDA-86A6-AE074EABB332.html</loc>
                <lastmod>2026-10-14T09:57:47</lastmod>
-               <title>2.10 CLASSB_SelfTest_FailSafe</title>
+               <title>2.11 CLASSB_SelfTest_FailSafe</title>
                <description>void CLASSB_SelfTest_FailSafe(CLASSB_TEST_ID</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-6FA504D8-6265-41F4-80A4-945BC7128F30.html</loc>
                <lastmod>2026-10-15T09:55:14</lastmod>
-               <title>2.11 CLASSB_ClearTestResults</title>
+               <title>2.12 CLASSB_ClearTestResults</title>
                <description>void CLASSB_ClearTestResults(CLASSB_TEST_TYPE</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-944D75F6-D6FB-4DBD-95E9-35D18333C4DD.html</loc>
                <lastmod>2026-10-14T09:56:27</lastmod>
-               <title>2.12 CLASSB_GetTestResult</title>
+               <title>2.13 CLASSB_GetTestResult</title>
                <description>CLASSB_TEST_STATUS CLASSB_GetTestResult(CLASSB_TEST_TYPE test_type, CLASSB_TEST_ID</description>
                <urls/>
             </url>
@@ -130,7 +137,7 @@
             </url>
             <url>
                <loc>GUID-E9A0C8FB-D312-48B2-BE50-B4E78E961B45.html</loc>
-               <lastmod>2026-10-14T09:54:49</lastmod>
+               <lastmod>2026-11-10T09:35:47</lastmod>
                <title>3.4 CLASSB_CLOCK_MAX_SYSTICK_VAL</title>
                <description>Upper limit of SysTick</description>
                <urls/>
@@ -178,52 +185,52 @@
                <urls/>
             </url>
             <url>
-               <loc>GUID-E119E6CD-12B9-4B61-A688-5E9058A7277F.html</loc>
-               <lastmod>2026-10-14T09:57:53</lastmod>
-               <title>3.11 CLASSB_SRAM_ALL_32BITS_HIGH</title>
-               <description>Defines name for max 32-bit unsigned</description>
-               <urls/>
-            </url>
-            <url>
                <loc>GUID-E5C41ED0-1515-4307-9498-C2F55FCFEACA.html</loc>
                <lastmod>2026-10-15T10:26:05</lastmod>
-               <title>3.12 CLASSB_SRAM_APP_AREA_START</title>
+               <title>3.11 CLASSB_SRAM_APP_AREA_START</title>
                <description>Defines the start address of the SRAM for the</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-085A0594-B6C8-448E-AB0F-FE7D81C67C53.html</loc>
                <lastmod>2026-10-15T10:26:00</lastmod>
-               <title>3.13 CLASSB_SRAM_BUFF_START_ADDRESS</title>
+               <title>3.12 CLASSB_SRAM_BUFF_START_ADDRESS</title>
                <description>SRAM test buffer start</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-B5170C39-58BC-4958-9058-914A97DC8E6B.html</loc>
                <lastmod>2026-10-15T10:25:55</lastmod>
-               <title>3.14 CLASSB_SRAM_FINAL_WORD_ADDRESS</title>
+               <title>3.13 CLASSB_SRAM_FINAL_WORD_ADDRESS</title>
                <description>Final word address in the</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-31C4ECD7-F25B-4DDC-B896-5ED74C80C1CF.html</loc>
-               <lastmod>2026-10-15T10:25:51</lastmod>
-               <title>3.15 CLASSB_SRAM_STARTUP_TEST_SIZE</title>
+               <lastmod>2026-10-28T07:09:36</lastmod>
+               <title>3.14 CLASSB_SRAM_STARTUP_TEST_SIZE</title>
                <description>Size of the SRAM tested during</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-85814DCD-AA69-49FD-B183-D74EB4A35769.html</loc>
                <lastmod>2026-10-14T09:58:48</lastmod>
-               <title>3.16 CLASSB_SRAM_TEST_BUFFER_SIZE</title>
+               <title>3.15 CLASSB_SRAM_TEST_BUFFER_SIZE</title>
                <description>Defines the size of the buffer used for SRAM</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-6AE33585-80F0-4DAA-86B0-D3A1A75095FD.html</loc>
                <lastmod>2026-10-15T10:17:22</lastmod>
-               <title>3.17 CLASSB_SRAM_TEMP_STACK_ADDRESS</title>
+               <title>3.16 CLASSB_SRAM_TEMP_STACK_ADDRESS</title>
                <description>Address of the temporary</description>
+               <urls/>
+            </url>
+            <url>
+               <loc>GUID-C2E91BA2-D808-4A8B-9872-7415535D36F9.html</loc>
+               <lastmod>2026-11-10T09:41:18</lastmod>
+               <title>3.17 CLASSB_SRAM_MARCH_BIT_WIDTH</title>
+               <description>Defines the march bit</description>
                <urls/>
             </url>
             <url>
@@ -283,128 +290,121 @@
                <urls/>
             </url>
             <url>
-               <loc>GUID-BA3CCCF5-AEE4-4432-B72B-5756CDBB0A3C.html</loc>
-               <lastmod>2026-10-15T10:41:36</lastmod>
-               <title>3.26 CLASSB_COMPL_RESULT_ADDR</title>
-               <description>Address of one's complement test</description>
-               <urls/>
-            </url>
-            <url>
                <loc>GUID-D116A488-7CC8-4C49-9435-8CCE84D9C8C4.html</loc>
                <lastmod>2026-10-15T10:41:39</lastmod>
-               <title>3.27 CLASSB_ONGOING_TEST_VAR_ADDR</title>
+               <title>3.26 CLASSB_ONGOING_TEST_VAR_ADDR</title>
                <description>Address at which the ID of ongoing test is</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-DBC8A5C4-F844-417F-96BB-6F44C7A0342E.html</loc>
                <lastmod>2026-10-15T10:41:41</lastmod>
-               <title>3.28 CLASSB_TEST_IN_PROG_VAR_ADDR</title>
+               <title>3.27 CLASSB_TEST_IN_PROG_VAR_ADDR</title>
                <description>Address of the variable which indicates that a Class B test is in</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-E1F7657C-843D-428A-9BF5-B286C78FC9A3.html</loc>
                <lastmod>2026-10-15T10:41:44</lastmod>
-               <title>3.29 CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</title>
+               <title>3.28 CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</title>
                <description>Address of the variable which indicates that a WDT test is in</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-4BA0D309-8959-43F5-B167-73E83E1CDF27.html</loc>
                <lastmod>2026-10-14T09:57:09</lastmod>
-               <title>3.30 CLASSB_INVALID_TEST_ID</title>
+               <title>3.29 CLASSB_INVALID_TEST_ID</title>
                <description>Invalid test</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-DBA21C09-B954-4D3C-A242-FD1750A1E2C2.html</loc>
                <lastmod>2026-10-14T09:55:40</lastmod>
-               <title>3.31 CLASSB_CPU_PC_TEST_VALUES</title>
+               <title>3.30 CLASSB_CPU_PC_TEST_VALUES</title>
                <description>Data type for PC Test input and output</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-C05DC540-79DF-4D8C-9CC5-F793B0336B92.html</loc>
                <lastmod>2026-10-15T11:07:46</lastmod>
-               <title>3.32 CLASSB_SST_RESULT_BF</title>
+               <title>3.31 CLASSB_SST_RESULT_BF</title>
                <description>Pointer to the structure for the Class B library startup self-test</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-F57C870A-3E0D-4771-AE5F-E517B1D7C305.html</loc>
                <lastmod>2026-10-15T11:07:51</lastmod>
-               <title>3.33 CLASSB_RST_RESULT_BF</title>
+               <title>3.32 CLASSB_RST_RESULT_BF</title>
                <description>Pointer to the structure for the Class B library run-time self-test</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-D83C66D5-5115-4704-A74F-C05077BF8627.html</loc>
                <lastmod>2026-10-14T09:56:46</lastmod>
-               <title>3.34 CLASSB_INIT_STATUS</title>
+               <title>3.33 CLASSB_INIT_STATUS</title>
                <description>Identifies Class B initialization</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-E30EAFD4-514F-4ECE-B126-653B02C70DCD.html</loc>
                <lastmod>2026-10-15T11:07:53</lastmod>
-               <title>3.35 CLASSB_PORT_INDEX</title>
+               <title>3.34 CLASSB_PORT_INDEX</title>
                <description>PORT index definitions for Class B library I/O pin</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-1EEE1B6F-1683-43F2-A5CB-9A667E0759D9.html</loc>
                <lastmod>2026-10-15T11:07:54</lastmod>
-               <title>3.36 CLASSB_PORT_PIN</title>
+               <title>3.35 CLASSB_PORT_PIN</title>
                <description>PIN definitions for Class B library I/O pin</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-03ABB158-165F-4011-87B4-F59EFFE71016.html</loc>
-               <lastmod>2026-10-15T11:07:56</lastmod>
-               <title>3.37 CLASSB_PORT_PIN_STATE</title>
+               <lastmod>2026-11-05T07:02:19</lastmod>
+               <title>3.36 CLASSB_PORT_PIN_STATE</title>
                <description>PORT pin</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-943E6E7F-F327-410D-B18F-014FC7208C22.html</loc>
                <lastmod>2026-10-14T09:58:21</lastmod>
-               <title>3.38 CLASSB_SRAM_MARCH_ALGO</title>
+               <title>3.37 CLASSB_SRAM_MARCH_ALGO</title>
                <description>Selects the RAM March algorithm to</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-841747FE-EE71-48E8-BE22-C46DFF418B50.html</loc>
                <lastmod>2026-10-14T09:59:14</lastmod>
-               <title>3.39 CLASSB_STARTUP_STATUS</title>
+               <title>3.38 CLASSB_STARTUP_STATUS</title>
                <description>Identifies startup test</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-3DFF697B-FFEB-4DC7-B652-E28A0B763C94.html</loc>
                <lastmod>2026-10-15T11:29:51</lastmod>
-               <title>3.40 CLASSB_TEST_ID</title>
+               <title>3.39 CLASSB_TEST_ID</title>
                <description>Identifies Class B library</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-FDB3A737-F99C-448A-8BDE-3338F8EE3BDA.html</loc>
                <lastmod>2026-10-14T09:59:41</lastmod>
-               <title>3.41 CLASSB_TEST_STATUS</title>
+               <title>3.40 CLASSB_TEST_STATUS</title>
                <description>Identifies result from Class B library</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-80DF17CC-E825-4AE9-A0C6-9EFF8F1B0C0E.html</loc>
                <lastmod>2026-10-14T09:59:35</lastmod>
-               <title>3.42 CLASSB_TEST_STATE</title>
+               <title>3.41 CLASSB_TEST_STATE</title>
                <description>Identifies Class B library test</description>
                <urls/>
             </url>
             <url>
                <loc>GUID-9C2F3AB7-24C0-40C1-BDC4-159DBA156A79.html</loc>
                <lastmod>2026-10-14T09:59:47</lastmod>
-               <title>3.43 CLASSB_TEST_TYPE</title>
+               <title>3.42 CLASSB_TEST_TYPE</title>
                <description>Identifies type of the Class B library</description>
                <urls/>
             </url>

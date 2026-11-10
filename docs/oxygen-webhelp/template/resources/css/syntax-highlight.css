@@ -1,44 +1,46 @@
 @import url("mchp-css-overrides.css");
 
+/* Keep highlighted tokens connected to the active Microchip theme. */
+
 .hl-json_key {
-	color: #7263B9
+	color: var(--wh-hl-json_key-color, #7263b9)
 }
 
 .hl-keyword, .codeph.keyword {
-	color: #0000e6
+	color: var(--wh-hl-keyword-color, #0000e6)
 }
 
 .hl-string {
-	color: #ce7b00
+	color: var(--wh-hl-string-color, #ce7b00)
 }
 
 .hl-comment {
-	color: #006400
+	color: var(--wh-hl-comment-color, #006400)
 }
 
 .hl-directive {
-	color: #009b00
+	color: var(--wh-hl-directive-color, #009b00)
 }
 
 .hl-tag {
-	color: #000096
+	color: var(--wh-hl-tag-color, #000096)
 }
 
 .hl-attribute {
-	color: #ff7935
+	color: var(--wh-hl-attribute-color, #ff7935)
 }
 
 .hl-value {
-	color: #993300
+	color: var(--wh-hl-value-color, #993300)
 }
 
 .hl-html {
-	color: navy;
+	color: var(--wh-hl-html-color, #000080);
 	font-weight: bold
 }
 
 .hl-xsl {
-	color: #0066FF
+	color: var(--wh-hl-xsl-color, #0066ff)
 }
 
 .hl-section {
@@ -50,26 +52,26 @@
 }
 
 .hl-annotation {
-	color: gray
+	color: var(--wh-hl-annotation-color, #808080)
 }
 
 .hl-tag-doctype-comment {
-	color: #3f5fbf
+	color: var(--wh-hl-tag-doctype-comment-color, #3f5fbf)
 }
 
 .hl-tag-doctype {
-	color: #0000ff
+	color: var(--wh-hl-tag-doctype-color, #0000ff)
 }
 
 .hl-defines {
-    color: #2e92c7;
+    color: var(--mchp-hl-defines-color, #2e92c7);
 }
 
 .hl-functions {
-    color: #000000;
+    color: var(--mchp-hl-functions-color, #000000);
     font-weight: bold;
 }
 
 .hl-includes {
-    color: #CE7B00;
+    color: var(--mchp-hl-includes-color, #ce7b00);
 }

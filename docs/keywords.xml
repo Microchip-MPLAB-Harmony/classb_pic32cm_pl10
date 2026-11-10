@@ -15,7 +15,7 @@
           pubid="PublicationID"
           reachid=""
           description=""
-          lastmodified="21/10/2026 08:05:13"
+          lastmodified="10/11/2026 09:42:42"
           covertitle="MPLAB® Harmony Class B Library for PIC32CM PL10 Devices"
           frontcover=""
           pubkeywords="">
@@ -140,6 +140,17 @@
       <title>CLASSB_SST_InterruptTest</title>
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_SST_InterruptTest</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-51C51C9E-4221-4E61-BD39-B45DFEC9821B"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_IO_InputSamplingEnable</register>
+      <title>CLASSB_IO_InputSamplingEnable</title>
+      <bitfield/>
+      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_IO_InputSamplingEnable</keyword>
    </keyworditem>
    <keyworditem topicid="GUID-80135420-10A6-42DC-AB3E-3A20EDE3C865"
                 nocomponent="true"
@@ -317,17 +328,6 @@
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_FLASH_CRC32_POLYNOMIAL</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-E119E6CD-12B9-4B61-A688-5E9058A7277F"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_SRAM_ALL_32BITS_HIGH</register>
-      <title>CLASSB_SRAM_ALL_32BITS_HIGH</title>
-      <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_ALL_32BITS_HIGH</keyword>
-   </keyworditem>
    <keyworditem topicid="GUID-E5C41ED0-1515-4307-9498-C2F55FCFEACA"
                 nocomponent="true"
                 parent="">
@@ -372,82 +372,16 @@
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_STARTUP_TEST_SIZE</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-4F153FAE-7DD4-41D1-A28B-529C3288DE74"
+   <keyworditem topicid="GUID-85814DCD-AA69-49FD-B183-D74EB4A35769"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_INTERRUPT_COUNT_VAR_ADDR</register>
-      <title>CLASSB_INTERRUPT_COUNT_VAR_ADDR</title>
+      <register>CLASSB_SRAM_TEST_BUFFER_SIZE</register>
+      <title>CLASSB_SRAM_TEST_BUFFER_SIZE</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_INTERRUPT_COUNT_VAR_ADDR</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-0821D666-4969-4C74-BD01-911410F98C88"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_RESULT_ADDR</register>
-      <title>CLASSB_RESULT_ADDR</title>
-      <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_RESULT_ADDR</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-BA3CCCF5-AEE4-4432-B72B-5756CDBB0A3C"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_COMPL_RESULT_ADDR</register>
-      <title>CLASSB_COMPL_RESULT_ADDR</title>
-      <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_COMPL_RESULT_ADDR</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-DBC8A5C4-F844-417F-96BB-6F44C7A0342E"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_TEST_IN_PROG_VAR_ADDR</register>
-      <title>CLASSB_TEST_IN_PROG_VAR_ADDR</title>
-      <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_IN_PROG_VAR_ADDR</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-841747FE-EE71-48E8-BE22-C46DFF418B50"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_STARTUP_STATUS</register>
-      <title>CLASSB_STARTUP_STATUS</title>
-      <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_STARTUP_STATUS</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-7CCE7CDE-B754-432C-8DC4-2C9AA77FCF53"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_INTR_DEVICE_VECT_OFFSET</register>
-      <title>CLASSB_INTR_DEVICE_VECT_OFFSET</title>
-      <bitfield/>
-      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_DEVICE_VECT_OFFSET</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-931B43F5-0FC4-453E-9611-A2198886E68F"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_INTERRUPT_TEST_VAR_ADDR</register>
-      <title>CLASSB_INTERRUPT_TEST_VAR_ADDR</title>
-      <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_INTERRUPT_TEST_VAR_ADDR</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_TEST_BUFFER_SIZE</keyword>
    </keyworditem>
    <keyworditem topicid="GUID-6AE33585-80F0-4DAA-86B0-D3A1A75095FD"
                 nocomponent="true"
@@ -460,82 +394,49 @@
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_TEMP_STACK_ADDRESS</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-85814DCD-AA69-49FD-B183-D74EB4A35769"
+   <keyworditem topicid="GUID-C2E91BA2-D808-4A8B-9872-7415535D36F9"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_SRAM_TEST_BUFFER_SIZE</register>
-      <title>CLASSB_SRAM_TEST_BUFFER_SIZE</title>
+      <register>CLASSB_SRAM_MARCH_BIT_WIDTH</register>
+      <title>CLASSB_SRAM_MARCH_BIT_WIDTH</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_TEST_BUFFER_SIZE</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_ALL_32BITS_HIGH</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-4BA0D309-8959-43F5-B167-73E83E1CDF27"
+   <keyworditem topicid="GUID-931B43F5-0FC4-453E-9611-A2198886E68F"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_INVALID_TEST_ID</register>
-      <title>CLASSB_INVALID_TEST_ID</title>
+      <register>CLASSB_INTERRUPT_TEST_VAR_ADDR</register>
+      <title>CLASSB_INTERRUPT_TEST_VAR_ADDR</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_INVALID_TEST_ID</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_INTERRUPT_TEST_VAR_ADDR</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-E1F7657C-843D-428A-9BF5-B286C78FC9A3"
+   <keyworditem topicid="GUID-4F153FAE-7DD4-41D1-A28B-529C3288DE74"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</register>
-      <title>CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</title>
+      <register>CLASSB_INTERRUPT_COUNT_VAR_ADDR</register>
+      <title>CLASSB_INTERRUPT_COUNT_VAR_ADDR</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_INTERRUPT_COUNT_VAR_ADDR</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-D116A488-7CC8-4C49-9435-8CCE84D9C8C4"
+   <keyworditem topicid="GUID-7CCE7CDE-B754-432C-8DC4-2C9AA77FCF53"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_ONGOING_TEST_VAR_ADDR</register>
-      <title>CLASSB_ONGOING_TEST_VAR_ADDR</title>
+      <register>CLASSB_INTR_DEVICE_VECT_OFFSET</register>
+      <title>CLASSB_INTR_DEVICE_VECT_OFFSET</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_ONGOING_TEST_VAR_ADDR</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-5A2B544C-E7CD-4FE9-A303-47667B33029A"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_INTR_VECTOR_TABLE_SIZE</register>
-      <title>CLASSB_INTR_VECTOR_TABLE_SIZE</title>
-      <bitfield/>
-      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_VECTOR_TABLE_SIZE</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-F0CDC3EA-CE1E-4175-B2A9-13778F61D6A4"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_INTR_TEST_TC_COUNT</register>
-      <title>CLASSB_INTR_TEST_TC_COUNT</title>
-      <bitfield/>
-      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_TEST_TC_COUNT</keyword>
-   </keyworditem>
-   <keyworditem topicid="GUID-182A8CCA-BCE3-47B7-8A3E-3CDBF7D3CCC2"
-                nocomponent="true"
-                parent="">
-      <device/>
-      <module/>
-      <component/>
-      <register>CLASSB_INTR_TEST_RTC_COUNT</register>
-      <title>CLASSB_INTR_TEST_RTC_COUNT</title>
-      <bitfield/>
-      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_TEST_RTC_COUNT</keyword>
+      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_DEVICE_VECT_OFFSET</keyword>
    </keyworditem>
    <keyworditem topicid="GUID-08BE75AF-2FB1-4ECA-BF3F-837CFE661675"
                 nocomponent="true"
@@ -548,60 +449,93 @@
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_INTR_MAX_INT_COUNT</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-03ABB158-165F-4011-87B4-F59EFFE71016"
+   <keyworditem topicid="GUID-182A8CCA-BCE3-47B7-8A3E-3CDBF7D3CCC2"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_PORT_PIN_STATE</register>
-      <title>CLASSB_PORT_PIN_STATE</title>
+      <register>CLASSB_INTR_TEST_RTC_COUNT</register>
+      <title>CLASSB_INTR_TEST_RTC_COUNT</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_GPIO_PIN_STATE</keyword>
+      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_TEST_RTC_COUNT</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-1EEE1B6F-1683-43F2-A5CB-9A667E0759D9"
+   <keyworditem topicid="GUID-F0CDC3EA-CE1E-4175-B2A9-13778F61D6A4"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_PORT_PIN</register>
-      <title>CLASSB_PORT_PIN</title>
+      <register>CLASSB_INTR_TEST_TC_COUNT</register>
+      <title>CLASSB_INTR_TEST_TC_COUNT</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_GPIO_PIN</keyword>
+      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_TEST_TC_COUNT</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-D83C66D5-5115-4704-A74F-C05077BF8627"
+   <keyworditem topicid="GUID-5A2B544C-E7CD-4FE9-A303-47667B33029A"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_INIT_STATUS</register>
-      <title>CLASSB_INIT_STATUS</title>
+      <register>CLASSB_INTR_VECTOR_TABLE_SIZE</register>
+      <title>CLASSB_INTR_VECTOR_TABLE_SIZE</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_INIT_STATUS</keyword>
+      <keyword>MH3_CLASSB_PIC32CM_JH_CLASSB_INTR_VECTOR_TABLE_SIZE</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-F57C870A-3E0D-4771-AE5F-E517B1D7C305"
+   <keyworditem topicid="GUID-0821D666-4969-4C74-BD01-911410F98C88"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_RST_RESULT_BF</register>
-      <title>CLASSB_RST_RESULT_BF</title>
+      <register>CLASSB_RESULT_ADDR</register>
+      <title>CLASSB_RESULT_ADDR</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_RST_RESULT_BF</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_RESULT_ADDR</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-C05DC540-79DF-4D8C-9CC5-F793B0336B92"
+   <keyworditem topicid="GUID-D116A488-7CC8-4C49-9435-8CCE84D9C8C4"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_SST_RESULT_BF</register>
-      <title>CLASSB_SST_RESULT_BF</title>
+      <register>CLASSB_ONGOING_TEST_VAR_ADDR</register>
+      <title>CLASSB_ONGOING_TEST_VAR_ADDR</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_SST_RESULT_BF</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_ONGOING_TEST_VAR_ADDR</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-DBC8A5C4-F844-417F-96BB-6F44C7A0342E"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_TEST_IN_PROG_VAR_ADDR</register>
+      <title>CLASSB_TEST_IN_PROG_VAR_ADDR</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_IN_PROG_VAR_ADDR</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-E1F7657C-843D-428A-9BF5-B286C78FC9A3"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</register>
+      <title>CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_WDT_TEST_IN_PROG_VAR_ADDR</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-4BA0D309-8959-43F5-B167-73E83E1CDF27"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_INVALID_TEST_ID</register>
+      <title>CLASSB_INVALID_TEST_ID</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_INVALID_TEST_ID</keyword>
    </keyworditem>
    <keyworditem topicid="GUID-DBA21C09-B954-4D3C-A242-FD1750A1E2C2"
                 nocomponent="true"
@@ -614,38 +548,38 @@
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_CPU_PC_TEST_VALUES</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-80DF17CC-E825-4AE9-A0C6-9EFF8F1B0C0E"
+   <keyworditem topicid="GUID-C05DC540-79DF-4D8C-9CC5-F793B0336B92"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_TEST_STATE</register>
-      <title>CLASSB_TEST_STATE</title>
+      <register>CLASSB_SST_RESULT_BF</register>
+      <title>CLASSB_SST_RESULT_BF</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_STATE</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_SST_RESULT_BF</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-3DFF697B-FFEB-4DC7-B652-E28A0B763C94"
+   <keyworditem topicid="GUID-F57C870A-3E0D-4771-AE5F-E517B1D7C305"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_TEST_ID</register>
-      <title>CLASSB_TEST_ID</title>
+      <register>CLASSB_RST_RESULT_BF</register>
+      <title>CLASSB_RST_RESULT_BF</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_ID</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_RST_RESULT_BF</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-943E6E7F-F327-410D-B18F-014FC7208C22"
+   <keyworditem topicid="GUID-D83C66D5-5115-4704-A74F-C05077BF8627"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_SRAM_MARCH_ALGO</register>
-      <title>CLASSB_SRAM_MARCH_ALGO</title>
+      <register>CLASSB_INIT_STATUS</register>
+      <title>CLASSB_INIT_STATUS</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_MARCH_ALGO</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_INIT_STATUS</keyword>
    </keyworditem>
    <keyworditem topicid="GUID-E30EAFD4-514F-4ECE-B126-653B02C70DCD"
                 nocomponent="true"
@@ -658,16 +592,60 @@
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_PORT_INDEX</keyword>
    </keyworditem>
-   <keyworditem topicid="GUID-9C2F3AB7-24C0-40C1-BDC4-159DBA156A79"
+   <keyworditem topicid="GUID-1EEE1B6F-1683-43F2-A5CB-9A667E0759D9"
                 nocomponent="true"
                 parent="">
       <device/>
       <module/>
       <component/>
-      <register>CLASSB_TEST_TYPE</register>
-      <title>CLASSB_TEST_TYPE</title>
+      <register>CLASSB_PORT_PIN</register>
+      <title>CLASSB_PORT_PIN</title>
       <bitfield/>
-      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_TYPE</keyword>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_GPIO_PIN</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-03ABB158-165F-4011-87B4-F59EFFE71016"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_PORT_PIN_STATE</register>
+      <title>CLASSB_PORT_PIN_STATE</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_GPIO_PIN_STATE</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-943E6E7F-F327-410D-B18F-014FC7208C22"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_SRAM_MARCH_ALGO</register>
+      <title>CLASSB_SRAM_MARCH_ALGO</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_SRAM_MARCH_ALGO</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-841747FE-EE71-48E8-BE22-C46DFF418B50"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_STARTUP_STATUS</register>
+      <title>CLASSB_STARTUP_STATUS</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_STARTUP_STATUS</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-3DFF697B-FFEB-4DC7-B652-E28A0B763C94"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_TEST_ID</register>
+      <title>CLASSB_TEST_ID</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_ID</keyword>
    </keyworditem>
    <keyworditem topicid="GUID-FDB3A737-F99C-448A-8BDE-3338F8EE3BDA"
                 nocomponent="true"
@@ -679,5 +657,27 @@
       <title>CLASSB_TEST_STATUS</title>
       <bitfield/>
       <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_STATUS</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-80DF17CC-E825-4AE9-A0C6-9EFF8F1B0C0E"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_TEST_STATE</register>
+      <title>CLASSB_TEST_STATE</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_STATE</keyword>
+   </keyworditem>
+   <keyworditem topicid="GUID-9C2F3AB7-24C0-40C1-BDC4-159DBA156A79"
+                nocomponent="true"
+                parent="">
+      <device/>
+      <module/>
+      <component/>
+      <register>CLASSB_TEST_TYPE</register>
+      <title>CLASSB_TEST_TYPE</title>
+      <bitfield/>
+      <keyword>MH3_classb_pic32mk_mc_CLASSB_TEST_TYPE</keyword>
    </keyworditem>
 </keywords>

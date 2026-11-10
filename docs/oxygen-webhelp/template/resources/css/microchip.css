@@ -34,8 +34,14 @@ body {
  *  
  */
 .wh_header {
-  background-color: #fff;
+  background-color: var(--wh-primary-bg, #fff);
   padding: unset;
+}
+
+/* Keep the standard header logo in light mode and use the white/red logo
+   whenever Oxygen activates its dark theme. */
+:root[data-wh-theme="dark"] .wh_logo > img {
+  content: url("../images/microchip-logo.png");
 }
 
 /*
@@ -61,9 +67,13 @@ body {
  */
 
 .editbutton {
+  display: inline-block;
+  box-sizing: border-box;
   border: 2px solid green;
   border-radius: 5px;
-  width: 200px;
+  width: auto;
+  max-width: 100%;
+  margin-block: 1rem;
   text-align: center;
   padding: 7px;
   background-color: #04aa6d;
@@ -88,10 +98,10 @@ body {
   padding-bottom: 5px;
 }
 .wh_tile_title a {
-  color: #1c355e;
+  color: var(--mchp-tile-title-color, #1c355e);
 }
 .wh_tile_title a:hover {
-  color: #1c355e;
+  color: var(--mchp-tile-title-color, #1c355e);
   text-decoration: underline;
 }
 /*
@@ -115,7 +125,22 @@ body {
  *  
  */
 .wh_tools {
-  background-color: #fff;
+  background-color: var(--wh-primary-bg, #fff);
+}
+
+.wh_publication_toc {
+  background-color: var(--wh-primary-bg, #fff);
+  color: var(--wh-publication-toc-color, var(--wh-primary-color, #000));
+}
+
+.wh_publication_toc a,
+.wh_publication_toc a:visited,
+.wh_publication_toc a:hover {
+  color: inherit;
+}
+
+.wh_publication_toc .active > .topicref a {
+  color: var(--wh-related-links-color, #2e66b7);
 }
 
 /*
@@ -136,9 +161,14 @@ body {
    gap: 4px;
  }
 
- .oxy-icon-arrow-right-after::after{
-  content: "t";
-  margin-left: 4px;
+ #topic_navigation_links .navnext > a.oxy-icon-arrow-right::before {
+   content: none;
+ }
+
+ #topic_navigation_links .navnext > a.oxy-icon-arrow-right::after {
+   content: "t";
+   font-family: "oXygen WebHelp";
+   margin-left: 4px;
  }
 
 /*
@@ -422,14 +452,22 @@ table.simpletable.dataTable.bitFieldValues th {
   color: #fff;
 }
 
-table.table tbody tr:nth-child(odd),
-table.simpletable.dataTable.bitFieldValues tbody tr:nth-child(odd) {
-  background-color: #ffffff;
+/* Oxygen 28.1 paints table cells, hiding row backgrounds. Let data cells
+ * follow their row while preserving explicit header and reserved-cell fills.
+ * Direct children keep outer-table styling out of nested tables. */
+table.table > tbody > tr > td:not(:where(.header-cell-bg)),
+table.simpletable.dataTable.bitFieldValues > tbody > tr > td:not(:where(.header-cell-bg)) {
+  background-color: inherit;
 }
 
-table.table tbody tr:nth-child(even),
-table.simpletable.dataTable.bitFieldValues tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
+table.table > tbody > tr:nth-child(odd),
+table.simpletable.dataTable.bitFieldValues > tbody > tr:nth-child(odd) {
+  background-color: var(--wh-primary-bg, #ffffff);
+}
+
+table.table > tbody > tr:nth-child(even),
+table.simpletable.dataTable.bitFieldValues > tbody > tr:nth-child(even) {
+  background-color: var(--wh-subtle-color, #f2f2f2);
 }
 
 .cellrowborder {
@@ -461,19 +499,19 @@ table.simpletable.dataTable.bitFieldValues tbody tr:nth-child(even) {
   border-right: solid 1px #a7a9ab;
 }
 
-table.nozebra tbody tr:nth-child(odd),
-table.nozebra tbody tr:nth-child(even) {
-  background-color: #ffffff;
+table.nozebra > tbody > tr:nth-child(odd),
+table.nozebra > tbody > tr:nth-child(even) {
+  background-color: var(--wh-primary-bg, #ffffff);
 }
 
-table.widetablenozebra tbody tr:nth-child(odd),
-table.widetablenozebra tbody tr:nth-child(even) {
-  background-color: #ffffff;
+table.widetablenozebra > tbody > tr:nth-child(odd),
+table.widetablenozebra > tbody > tr:nth-child(even) {
+  background-color: var(--wh-primary-bg, #ffffff);
 }
 
-table.nocolor tbody tr:nth-child(odd),
-table.nocolor tbody tr:nth-child(even) {
-  background-color: white;
+table.nocolor > tbody > tr:nth-child(odd),
+table.nocolor > tbody > tr:nth-child(even) {
+  background-color: var(--wh-primary-bg, #ffffff);
 }
 
 table.table.transparent-table.transparent-border-table {
@@ -483,7 +521,7 @@ table.table.transparent-table.transparent-border-table td {
   vertical-align: middle !important;
 }
 
-table.transparent-table tbody tr {
+table.transparent-table > tbody > tr {
   background-color: transparent !important;
 }
 
@@ -494,8 +532,8 @@ table.transparent-border-table tbody tr {
   border-bottom: hidden;
 }
 
-table.table.registersummary tbody tr:nth-child(even),
-table.table.registersummary tbody tr:nth-child(odd) {
+table.table.registersummary > tbody > tr:nth-child(even),
+table.table.registersummary > tbody > tr:nth-child(odd) {
   background-color: transparent;
 }
 
@@ -507,8 +545,8 @@ table.table.registersummary tbody tr:nth-child(odd) {
   height: 20px;
 }
 
-.table.register tbody tr:nth-child(even),
-.table.register tbody tr:nth-child(odd) {
+.table.register > tbody > tr:nth-child(even),
+.table.register > tbody > tr:nth-child(odd) {
   background-color: transparent;
 }
 
@@ -528,7 +566,7 @@ table.table.registersummary tbody tr:nth-child(odd) {
 }
 
 .table.register tr:nth-child(2) td {
-  border: 1px solid #000;
+  border: 1px solid var(--mchp-register-border-color, #000);
 }
 
 .table.register tbody ~ tbody tr:first-child td {
@@ -541,7 +579,7 @@ table.table.registersummary tbody tr:nth-child(odd) {
 
 table.register td.reserved,
 table.registersummary td.reserved {
-  background-color: #dcdcdc;
+  background-color: var(--mchp-register-reserved-bg, #dcdcdc);
 }
 
 table.bitFieldValues {
@@ -551,7 +589,7 @@ table.bitFieldValues {
 /* end: atmel.css table styling */
 
 table.bitFieldValues {
-  border: 1px solid #000;
+  border: 1px solid var(--mchp-register-border-color, #000);
 }
 
 table.table th {
@@ -608,13 +646,13 @@ table.table .valign-bottom {
   padding: 0.25rem;
 }
 .register .reserved {
-  background-color: #e0e0e0;
+  background-color: var(--mchp-register-reserved-bg, #e0e0e0);
 }
 .register .table td:first-child {
   text-align: end;
 }
 .register .table tr:nth-child(2) td {
-  border: 1px solid black;
+  border: 1px solid var(--mchp-register-border-color, #000);
 }
 .register .table tr:nth-child(2) td:first-child, .register .table tr:nth-child(2) td:last-child {
   border: none;
@@ -643,7 +681,7 @@ table.registersummary th, table.registersummary td {
 
 table.register td.reserved,
 table.registersummary td.reserved {
-  background-color: #dcdcdc;
+  background-color: var(--mchp-register-reserved-bg, #dcdcdc);
 }
 
 td.rowsep-0 {
@@ -725,6 +763,10 @@ ol li ol li ol li {
   list-style: lower-roman;
 }
 
+.search-breadcrumb li {
+  list-style: none;
+}
+
 table ol li {
   list-style: decimal !important;
 }
@@ -741,6 +783,46 @@ table ol li ol li ol li {
 ul li,
 ul li ul li ul li {
   list-style: disc;
+}
+
+/* Oxygen 28 renders the theme selector as a list-based dropdown. Do not let
+   publication-content list styling add a marker to that application control. */
+.wh_theme .dropdown-menu > li {
+  list-style: none;
+}
+
+/* Bind the custom Product Pages Bootstrap dropdown to the active Oxygen
+   theme. Bootstrap otherwise keeps a white menu while Oxygen supplies dark
+   theme text, resulting in very low contrast. */
+#devicesMenu:hover,
+#devicesMenu:focus,
+#devicesMenu:focus-visible,
+#devicesMenu.show,
+#devicesMenu:active {
+  background-color: var(--wh-top-menu-bg, #f4f4f4);
+  border-color: var(--wh-label-color, #666);
+  color: var(--wh-primary-color, #000);
+}
+
+#devicesMenu + .dropdown-menu {
+  --bs-dropdown-bg: var(--wh-top-menu-bg, #f4f4f4);
+  --bs-dropdown-color: var(--wh-primary-color, #000);
+  --bs-dropdown-link-color: var(--wh-primary-color, #000);
+  --bs-dropdown-link-hover-bg: var(--wh-subtle-color, #f2f2f2);
+  --bs-dropdown-link-hover-color: var(--wh-primary-color, #000);
+  background-color: var(--wh-top-menu-bg, #f4f4f4);
+  border-color: var(--wh-label-color, #666);
+  color: var(--wh-primary-color, #000);
+}
+
+#devicesMenu + .dropdown-menu .dropdown-item {
+  color: var(--wh-primary-color, #000);
+}
+
+#devicesMenu + .dropdown-menu .dropdown-item:hover,
+#devicesMenu + .dropdown-menu .dropdown-item:focus {
+  background-color: var(--wh-subtle-color, #f2f2f2);
+  color: var(--wh-primary-color, #000);
 }
 
 ul li ul li {
@@ -895,8 +977,41 @@ dl.noboldlist dd {
 .mchp_disclaimer > .mchp_disclaimer_text {
   font-size: .8em;
   margin: 0;
-  color: #000;
+  color: var(--wh-primary-color, #000);
 }
+
+/* Search result pagination must follow the active Oxygen theme. */
+#wh-search-pagination > ul > li {
+  list-style: none;
+}
+
+#wh-search-pagination > ul > li > a {
+  background-color: var(--wh-search-pagination-bg, var(--wh-primary-bg, #fff));
+  border-color: var(--wh-soft-color, #ccc);
+  color: var(--wh-link-color, #000080);
+}
+
+#wh-search-pagination > ul > li > a:hover,
+#wh-search-pagination > ul > li > a:focus {
+  background-color: var(--wh-subtle-color, #f2f2f2);
+  color: var(--wh-link-color, #000080);
+}
+
+#wh-search-pagination > ul > li.active > a {
+  background-color: var(--wh-search-pagination-active-bg, #346ec5);
+  border-color: var(--wh-search-pagination-active-bg, #346ec5);
+  color: var(--wh-secondary-color, #fff);
+}
+
+#wh-search-pagination > ul > li.disabled > a {
+  background-color: var(--wh-search-pagination-disabled-bg, #e9ecef);
+  color: var(--wh-search-pagination-disabled-color, rgba(33, 37, 41, .75));
+}
+
+ol.searchresult {
+  padding-left: 1em;
+}
+
 .wh_footer {
   margin-top: 0 !important;
 }

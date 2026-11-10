@@ -1,4 +1,17 @@
 var localization = new Array();
+localization["mdExportMenu"]="Markdown Export menu";
+localization["copyMd"]="Copy as Markdown";
+localization["copyMdDesc"]="Copy topic as Markdown for LLMs";
+localization["copyMdDescLocal"]="Only available on HTTP server";
+localization["viewMd"]="View as Markdown";
+localization["viewMdDesc"]="View topic as plain text";
+localization["switchTheme"]="Switch theme";
+localization["enterFullscreen"]="Maximize to full width";
+localization["exitFullscreen"]="Restore to normal width";
+localization["label.see"]="See";
+localization["label.see_also"]="See also";
+localization["ask.me.anything"]="Ask me anything";
+localization["go.to.top"]="Go to top";
 localization["advanced_search_tooltip_title"]="Search Syntax Help";
 localization["reset_search_filters"]="Reset";
 localization["search_filters"]="Filters";

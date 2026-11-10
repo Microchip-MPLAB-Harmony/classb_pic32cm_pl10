@@ -1,15 +1,27 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" data-whc_version="26.1">
-    <head><link rel="shortcut icon" href="oxygen-webhelp\template\resources/images/favicon.ico"/><link rel="icon" href="oxygen-webhelp\template\resources/images/favicon.ico"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="uint32_t CLASSB_FlashCRCGenerate(uint32_t start_addr, uint32_t size); Generates CRC-32 checksum for a given memory area. This function runs CRC-32 algorithm with the polynomial 0xEDB88320 and returns ..."/><meta name="copyright" content="(C) Copyright 2026"/><meta name="generator" content="DITA-OT"/><title>2.5 CLASSB_FlashCRCGenerate</title><!--  Generated with Oxygen version 26.1, build number 2024091616.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="GUID-BCCE9058-E888-40BB-9541-8A4F69677516-d588e59"/><meta name="wh-source-relpath" content="GUID-BCCE9058-E888-40BB-9541-8A4F69677516.xml"/><meta name="wh-out-relpath" content="GUID-BCCE9058-E888-40BB-9541-8A4F69677516.html"/>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us" data-whc_version="28.1">
+    <head><link rel="shortcut icon" href="oxygen-webhelp\template\resources/images/favicon.ico?buildId=20261110094256"/><link rel="icon" href="oxygen-webhelp\template\resources/images/favicon.ico?buildId=20261110094256"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="description" content="uint32_t CLASSB_FlashCRCGenerate(uint32_t start_addr, uint32_t size); Generates CRC-32 checksum for a given memory area. This function runs CRC-32 algorithm with the polynomial 0xEDB88320 and returns ..."/><meta name="copyright" content="(C) Copyright 2026"/><meta name="generator" content="DITA-OT"/><title>2.5 CLASSB_FlashCRCGenerate</title><!--  Generated with Oxygen version 28.1, build number 2026061211.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="GUID-BCCE9058-E888-40BB-9541-8A4F69677516-d585e59"/><meta name="wh-source-relpath" content="GUID-BCCE9058-E888-40BB-9541-8A4F69677516.xml"/><meta name="wh-out-relpath" content="GUID-BCCE9058-E888-40BB-9541-8A4F69677516.html"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/bootstrap.css?buildId=2026061211"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/jquery-ui.css?buildId=2026061211"/>
+        
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2026061211"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/microchip-theme.css?buildId=20261110094256"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/microchip.css?buildId=20261110094256"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/notes.css?buildId=20261110094256"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/mchp-css-overrides.css?buildId=20261110094256"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/syntax-highlight.css?buildId=20261110094256"/>
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20261110094256"></script>
+    <script src="./oxygen-webhelp/app/themes.js?buildId=20261110094256"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2026061211"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20261110094256"></script>
+    
+    <script defer="defer" src="./oxygen-webhelp/app/jquery.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-ui.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-bootpag.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-highlight.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/popperjs-core.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/bootstrap.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/dompurify.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/image-map.js?buildId=2026061211"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/maphilight.js?buildId=2026061211"></script>
 
-    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/commons.css?buildId=2024091616"/>
-    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2024091616"/>
-
-    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20261021080527"></script>
-    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2024091616"></script>
-    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20261021080527"></script>
-    <script defer="defer" src="./oxygen-webhelp/app/commons.js?buildId=2024091616"></script>
-    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2024091616"></script>
-<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/microchip.css?buildId=2024091616"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/notes.css?buildId=2024091616"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/mchp-css-overrides.css?buildId=2024091616"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/resources/css/syntax-highlight.css?buildId=2024091616"/><meta name="documentType" content="Online Reference"/><meta name="documentTitle" content="MPLAB® Harmony Class B Library for PIC32CM PL10 Devices"/><meta name="businessUnit" content="not_available"/><script>
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2026061211"></script>
+<meta name="documentType" content="Online Reference"/><meta name="documentTitle" content="MPLAB® Harmony Class B Library for PIC32CM PL10 Devices"/><meta name="businessUnit" content="not_available"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/app/compact-sidetoc.css"/><script defer="defer" src="oxygen-webhelp/app/compact-sidetoc.js"></script><script>
             window.adobeDataLayer = window.adobeDataLayer || [];
             window.adobeDataLayer.push({
                 page: {
@@ -35,7 +47,7 @@ function OptanonWrapper() { }
 </head>
 
     <body id="GUID-BCCE9058-E888-40BB-9541-8A4F69677516" class="wh_topic_page frmBody">
-        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+        <a class="visually-hidden-focusable" id="wh_jump_to_content" href="#wh_topic_body">
             Jump to main content
         </a>
         
@@ -43,24 +55,26 @@ function OptanonWrapper() { }
         
         
         <header class="navbar navbar-default wh_header">
-    <div class="container-fluid">
-        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+    <div class="container-fluid navbar-expand-md">
+        <div class="wh_header_flex_container navbar-nav navbar-dark">
             <div class="wh_logo_and_publication_title_container">
                 <div class="wh_logo_and_publication_title">
                     
-                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="oxygen-webhelp\template\resources/images/microchip.png" alt="MPLAB® Harmony Class B Library for PIC32CM PL10 Devices &#xA;    "/></a>
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="oxygen-webhelp\template\resources/images/microchip.png?buildId=20261110094256" alt="MPLAB® Harmony Class B Library for PIC32CM PL10 Devices &#xA;    "/></a>
                     <div class=" wh_publication_title "><a href="index.html">MPLAB® Harmony Class B Library for PIC32CM PL10 Devices 
     </a></div>
                     
                 </div>
-                
-                
+                <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#wh_top_menu_and_indexterms_link" aria-controls="wh_top_menu_and_indexterms_link" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="navbar-toggler-icon"><span></span></span>
+                </button>
             </div>
 
             <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
                 
                 
                 
+                <div class=" wh_theme "><button id="wh_theme_button" class="wh_theme_btn" data-wh-theme="auto" title="Switch theme" aria-label="Switch theme" aria-haspopup="menu" aria-expanded="false"></button></div>
                 
             </div>
         </div>
@@ -74,7 +88,7 @@ function OptanonWrapper() { }
             
             
             
-            <form id="searchForm" method="get" role="search" action="search.html"><div class="d-flex justify-contents-around"><div class="flex-grow-1"></div><div class="position-relative flex-grow-1"><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div><div class="align-self-center flex-grow-1 ml-2"></div></div></form>
+            <form id="searchForm" method="get" role="search" action="search.html"><div class="d-flex justify-contents-around"><div class="flex-grow-1"></div><div class="position-relative flex-grow-1"><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div><div class="align-self-center flex-grow-1 ms-2"></div></div></form>
             
             <div class="mchp-color-stripe-grid-container">
   <div class="mchp-main-bar mchp-orange-bar"></div>
@@ -84,10 +98,10 @@ function OptanonWrapper() { }
             
         </div>
         
-        <div class="container-fluid" id="wh_topic_container">
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
             <div class="row">
 
-                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                <nav class="wh_tools d-print-none" aria-label="Tools">
                     
                     <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><div class="topicref" data-id="GUID-9196DEFD-06E3-405A-B144-1741329430D0"><div class="title"><a href="GUID-9196DEFD-06E3-405A-B144-1741329430D0.html"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2</ph>
 List of Interface Routines</a></div></div></li><li class="active"><div class="topicref" data-id="GUID-BCCE9058-E888-40BB-9541-8A4F69677516"><div class="title"><a href="GUID-BCCE9058-E888-40BB-9541-8A4F69677516.html"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.5</ph>
@@ -98,14 +112,12 @@ CLASSB_FlashCRCGenerate</a></div></div></li></ol></div>
                     <div class="wh_right_tools">
                         <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader">
   
-<span class="navprev"><a class="- topic/link link" href="GUID-45EDDB16-0C6F-4899-A823-7F53C207E794.html" title="CLASSB_ClockTest" aria-label="Previous topic: CLASSB_ClockTest" rel="prev">
-                    Previous
-            </a></span><span class="divider">|</span>  
-<span class="navnext"><a class="- topic/link link" href="GUID-8048DDDE-F5DA-4EA6-990E-F05640E1AFA2.html" title="CLASSB_FlashCRCTest" aria-label="Next topic: CLASSB_FlashCRCTest" rel="next">
-                    Next
-            </a></span>  </span></div>
+<span class="navprev"><a class="- topic/link link" href="GUID-45EDDB16-0C6F-4899-A823-7F53C207E794.html" title="CLASSB_ClockTest" aria-label="Previous topic: CLASSB_ClockTest" rel="prev">Previous</a></span><span class="divider">|</span>  
+<span class="navnext"><a class="- topic/link link" href="GUID-8048DDDE-F5DA-4EA6-990E-F05640E1AFA2.html" title="CLASSB_FlashCRCTest" aria-label="Next topic: CLASSB_FlashCRCTest" rel="next">Next</a></span>  </span></div>
                         <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_full_width_link" data-next-state="expanded" aria-label="Maximize to full width" title="Maximize to full width"></button>
                         <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
                         
                         
                         
@@ -125,41 +137,21 @@ CLASSB_FlashCRCGenerate</a></div></div></li></ol></div>
             <div class="wh_content_area">
                 <div class="row">
                     
-                        <nav id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" aria-label="Table of Contents Container">
+                        <nav class="col-xxl-3 col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" id="wh_publication_toc" aria-label="Table of Contents Container">
                             <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
 		                        
-                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="GUID-BFDAF076-16B0-43EE-9EC9-AC8CBD62EA89-d588e11" class="topicref" data-id="GUID-BFDAF076-16B0-43EE-9EC9-AC8CBD62EA89" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-BFDAF076-16B0-43EE-9EC9-AC8CBD62EA89.html" id="GUID-BFDAF076-16B0-43EE-9EC9-AC8CBD62EA89-d588e11-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">1</ph>
-MPLAB® Harmony Class B Library for PIC32CM PL10 Devices</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="GUID-9196DEFD-06E3-405A-B144-1741329430D0-d588e19" class="topicref" data-id="GUID-9196DEFD-06E3-405A-B144-1741329430D0" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action GUID-9196DEFD-06E3-405A-B144-1741329430D0-d588e19-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-9196DEFD-06E3-405A-B144-1741329430D0.html" id="GUID-9196DEFD-06E3-405A-B144-1741329430D0-d588e19-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2</ph>
-List of Interface Routines</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="GUID-90CBC413-F469-4F5E-A467-A30F821C5560-d588e27" class="topicref" data-id="GUID-90CBC413-F469-4F5E-A467-A30F821C5560" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-90CBC413-F469-4F5E-A467-A30F821C5560.html" id="GUID-90CBC413-F469-4F5E-A467-A30F821C5560-d588e27-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.1</ph>
-sCLASSB_App_WDT_Recovery</a></div></div></li><li role="treeitem"><div data-tocid="GUID-BCD3F904-15D8-4560-85F9-43D97449D77B-d588e35" class="topicref" data-id="GUID-BCD3F904-15D8-4560-85F9-43D97449D77B" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-BCD3F904-15D8-4560-85F9-43D97449D77B.html" id="GUID-BCD3F904-15D8-4560-85F9-43D97449D77B-d588e35-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.2</ph>
-CLASSB_CPU_RegistersTest</a></div></div></li><li role="treeitem"><div data-tocid="GUID-9C0D38EB-A9DA-4E8D-A87F-407090E40EC6-d588e43" class="topicref" data-id="GUID-9C0D38EB-A9DA-4E8D-A87F-407090E40EC6" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-9C0D38EB-A9DA-4E8D-A87F-407090E40EC6.html" id="GUID-9C0D38EB-A9DA-4E8D-A87F-407090E40EC6-d588e43-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.3</ph>
-CLASSB_CPU_PCTest</a></div></div></li><li role="treeitem"><div data-tocid="GUID-45EDDB16-0C6F-4899-A823-7F53C207E794-d588e51" class="topicref" data-id="GUID-45EDDB16-0C6F-4899-A823-7F53C207E794" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-45EDDB16-0C6F-4899-A823-7F53C207E794.html" id="GUID-45EDDB16-0C6F-4899-A823-7F53C207E794-d588e51-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.4</ph>
-CLASSB_ClockTest</a></div></div></li><li role="treeitem" class="active"><div data-tocid="GUID-BCCE9058-E888-40BB-9541-8A4F69677516-d588e59" class="topicref" data-id="GUID-BCCE9058-E888-40BB-9541-8A4F69677516" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-BCCE9058-E888-40BB-9541-8A4F69677516.html" id="GUID-BCCE9058-E888-40BB-9541-8A4F69677516-d588e59-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.5</ph>
-CLASSB_FlashCRCGenerate</a></div></div></li><li role="treeitem"><div data-tocid="GUID-8048DDDE-F5DA-4EA6-990E-F05640E1AFA2-d588e67" class="topicref" data-id="GUID-8048DDDE-F5DA-4EA6-990E-F05640E1AFA2" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-8048DDDE-F5DA-4EA6-990E-F05640E1AFA2.html" id="GUID-8048DDDE-F5DA-4EA6-990E-F05640E1AFA2-d588e67-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.6</ph>
-CLASSB_FlashCRCTest</a></div></div></li><li role="treeitem"><div data-tocid="GUID-FDCA2115-AE93-4353-8B36-CB0E8D11765D-d588e75" class="topicref" data-id="GUID-FDCA2115-AE93-4353-8B36-CB0E8D11765D" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-FDCA2115-AE93-4353-8B36-CB0E8D11765D.html" id="GUID-FDCA2115-AE93-4353-8B36-CB0E8D11765D-d588e75-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.7</ph>
-CLASSB_SRAM_MarchTestInit</a></div></div></li><li role="treeitem"><div data-tocid="GUID-3FA18BAF-14A1-41F4-A513-87DE155BA29C-d588e83" class="topicref" data-id="GUID-3FA18BAF-14A1-41F4-A513-87DE155BA29C" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-3FA18BAF-14A1-41F4-A513-87DE155BA29C.html" id="GUID-3FA18BAF-14A1-41F4-A513-87DE155BA29C-d588e83-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.8</ph>
-CLASSB_SST_InterruptTest</a></div></div></li><li role="treeitem"><div data-tocid="GUID-80135420-10A6-42DC-AB3E-3A20EDE3C865-d588e91" class="topicref" data-id="GUID-80135420-10A6-42DC-AB3E-3A20EDE3C865" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-80135420-10A6-42DC-AB3E-3A20EDE3C865.html" id="GUID-80135420-10A6-42DC-AB3E-3A20EDE3C865-d588e91-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.9</ph>
-CLASSB_RST_IOTest</a></div></div></li><li role="treeitem"><div data-tocid="GUID-63B5DDFD-7183-4FDA-86A6-AE074EABB332-d588e99" class="topicref" data-id="GUID-63B5DDFD-7183-4FDA-86A6-AE074EABB332" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-63B5DDFD-7183-4FDA-86A6-AE074EABB332.html" id="GUID-63B5DDFD-7183-4FDA-86A6-AE074EABB332-d588e99-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.10</ph>
-CLASSB_SelfTest_FailSafe</a></div></div></li><li role="treeitem"><div data-tocid="GUID-6FA504D8-6265-41F4-80A4-945BC7128F30-d588e108" class="topicref" data-id="GUID-6FA504D8-6265-41F4-80A4-945BC7128F30" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-6FA504D8-6265-41F4-80A4-945BC7128F30.html" id="GUID-6FA504D8-6265-41F4-80A4-945BC7128F30-d588e108-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.11</ph>
-CLASSB_ClearTestResults</a></div></div></li><li role="treeitem"><div data-tocid="GUID-944D75F6-D6FB-4DBD-95E9-35D18333C4DD-d588e116" class="topicref" data-id="GUID-944D75F6-D6FB-4DBD-95E9-35D18333C4DD" data-state="leaf"><span role="button" class="wh-expand-btn"></span><div class="title"><a href="GUID-944D75F6-D6FB-4DBD-95E9-35D18333C4DD.html" id="GUID-944D75F6-D6FB-4DBD-95E9-35D18333C4DD-d588e116-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">2.12</ph>
-CLASSB_GetTestResult</a></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="GUID-3A38E610-1629-4F54-AC3F-7B3ECEBE42F4-d588e124" class="topicref" data-id="GUID-3A38E610-1629-4F54-AC3F-7B3ECEBE42F4" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action GUID-3A38E610-1629-4F54-AC3F-7B3ECEBE42F4-d588e124-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-3A38E610-1629-4F54-AC3F-7B3ECEBE42F4.html" id="GUID-3A38E610-1629-4F54-AC3F-7B3ECEBE42F4-d588e124-link"><ph xmlns="http://www.oxygenxml.com/ns/webhelp/toc">3</ph>
-List of Constants and Data Types</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d588e479" class="topicref backmatter newpage backmatter_parent" data-id="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d588e479-link" class="wh-expand-btn"></span><div class="title"><a href="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B.html#GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B" id="GUID-0FB3F908-88EE-45CE-94F5-E97AF9049C9B-d588e479-link">Microchip Information</a></div></div></li></ul></div>
+                            	<div class=" wh_publication_toc " data-tooltip-position="right"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents" data-mchp-sidetoc-parent="__root__" data-mchp-sidetoc-chunk-size="100" data-mchp-sidetoc-label-above="Show more topics above" data-mchp-sidetoc-label-below="Show more topics below" data-mchp-sidetoc-label-all="Show all topics" data-mchp-sidetoc-loading-label="Loading topics…" data-mchp-sidetoc-more-label="more" data-mchp-sidetoc-error-label="Unable to load more topics. Try again."><li class="active mchp-sidetoc-bootstrap" role="treeitem" aria-hidden="true"><div class="topicref" data-tocid="__bootstrap__" data-state="leaf"><div class="title"><a href="#" tabindex="-1">Loading</a></div></div></li></ul></div>
 		                        
                             </div>
                         </nav>
                     
                     
-                    <div class="col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
-                        <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
-                            <span class="close-toc-icon-container">
-                                <span class="close-toc-icon"></span>     
-                            </span>
-                        </button>
-                        <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
-                            <span class="close-toc-icon-container">
-                                <span class="close-toc-icon"></span>     
-                            </span>
-                        </button>
+                    <div class="col-xxl-7 col-lg-7 col-md-9 col-sm-12" id="wh_topic_body">
                         
                         <div class=" wh_topic_content body "><main role="main" class=""><article role="article" aria-labelledby="GUID-BCCE9058-E888-40BB-9541-8A4F69677516__GUID-66967516-F63D-46D3-B3F2-9EA9B5AE5F56">
     <h1 class="- topic/title title topictitle1" id="GUID-BCCE9058-E888-40BB-9541-8A4F69677516__GUID-66967516-F63D-46D3-B3F2-9EA9B5AE5F56" style="">2.5 CLASSB_FlashCRCGenerate</h1>
@@ -226,8 +218,13 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
                         
                     </div>
                     
-                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-xxl-2 col-lg-2 d-none d-lg-block navbar d-print-none"> 
                             <div id="wh_topic_toc_content">
+              	                <button id="wh_close_topic_toc_button" class="close-toc-button d-none" aria-label="Toggle topic table of content" aria-controls="wh_topic_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
 		                        
 	                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="topic-item"><a href="#CONCEPT_MSX_VQZ_XYB" data-tocid="CONCEPT_MSX_VQZ_XYB"> Function</a></li><li class="topic-item"><a href="#CONCEPT_TRN_FJH_YBC" data-tocid="CONCEPT_TRN_FJH_YBC"> Summary</a></li><li class="topic-item"><a href="#CONCEPT_PBT_4JH_YBC" data-tocid="CONCEPT_PBT_4JH_YBC"> Description</a></li><li class="topic-item"><a href="#CONCEPT_G5F_QJH_YBC" data-tocid="CONCEPT_G5F_QJH_YBC"> Precondition</a></li><li class="topic-item"><a href="#CONCEPT_RXT_QJH_YBC" data-tocid="CONCEPT_RXT_QJH_YBC"> Parameters</a></li><li class="topic-item"><a href="#CONCEPT_GT5_QJH_YBC" data-tocid="CONCEPT_GT5_QJH_YBC"> Returns</a></li><li class="topic-item"><a href="#CONCEPT_WXR_NG3_DCC" data-tocid="CONCEPT_WXR_NG3_DCC"> Example</a></li><li class="topic-item"><a href="#CONCEPT_VQW_PLH_YBC" data-tocid="CONCEPT_VQW_PLH_YBC"> Remarks</a></li></ul></div>
 	                        	
@@ -242,7 +239,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
         </div> 
         <div class="mchp_revision_info mb-1 mt-3"><p class="mchp_revision_info_text text-center font-weight-bold m-0 px-2">PublicationIDA</p></div><footer class="wh_footer">
   <div class=" footer-container mx-auto ">
-    <div class="main">
+    <div class="main" data-mchp-footer-links-url="https://onlinedocs.microchip.com/api/footer-links">
   <div class="max">
     <div>
       <div class="accordion-list">
@@ -257,7 +254,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--first">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/corporate-overview" class="mchp-link__link" aria-label="Company">Company</a>
+                  <a data-mchp-footer-link="company" href="https://www.microchip.com/en-us/about/corporate-overview" class="mchp-link__link" aria-label="Company">Company</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -265,7 +262,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/careers" class="mchp-link__link" aria-label="Careers">Careers</a>
+                  <a data-mchp-footer-link="careers" href="https://www.microchip.com/en-us/about/careers" class="mchp-link__link" aria-label="Careers">Careers</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -273,7 +270,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/contact-us" class="mchp-link__link" aria-label="Contact Us">Contact Us</a>
+                  <a data-mchp-footer-link="contactUs" href="https://www.microchip.com/en-us/about/contact-us" class="mchp-link__link" aria-label="Contact Us">Contact Us</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -281,7 +278,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/media-center" class="mchp-link__link" aria-label="Media Center">Media Center</a>
+                  <a data-mchp-footer-link="mediaCenter" href="https://www.microchip.com/en-us/about/media-center" class="mchp-link__link" aria-label="Media Center">Media Center</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -289,7 +286,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/investors" class="mchp-link__link" aria-label="Investor Relations">Investor Relations</a>
+                  <a data-mchp-footer-link="investorRelations" href="https://www.microchip.com/en-us/about/investors" class="mchp-link__link" aria-label="Investor Relations">Investor Relations</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -297,7 +294,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--last">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/corporate-responsibility" class="mchp-link__link" aria-label="Corporate Responsibility">Corporate Responsibility</a>
+                  <a data-mchp-footer-link="corporateResponsibility" href="https://www.microchip.com/en-us/about/corporate-responsibility" class="mchp-link__link" aria-label="Corporate Responsibility">Corporate Responsibility</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -319,7 +316,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--first">
               <div class="link">
                 <div>
-                  <a target="_blank" href="https://forum.microchip.com/" class="mchp-link__link" aria-label="Microchip Forums">Microchip Forums</a>
+                  <a target="_blank" data-mchp-footer-link="microchipForums" href="https://forum.microchip.com/" class="mchp-link__link" aria-label="Microchip Forums">Microchip Forums</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -327,7 +324,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a target="_blank" href="https://www.avrfreaks.net/" class="mchp-link__link" aria-label="AVR Freaks">AVR Freaks</a>
+                  <a target="_blank" data-mchp-footer-link="avrFreaks" href="https://www.avrfreaks.net/" class="mchp-link__link" aria-label="AVR Freaks">AVR Freaks</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -335,7 +332,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/support/design-help" class="mchp-link__link" aria-label="Design Help">Design Help</a>
+                  <a data-mchp-footer-link="designHelp" href="https://www.microchip.com/en-us/support/design-help" class="mchp-link__link" aria-label="Design Help">Design Help</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -343,7 +340,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/support/technical-support" class="mchp-link__link" aria-label="Technical Support">Technical Support</a>
+                  <a data-mchp-footer-link="technicalSupport" href="https://www.microchip.com/en-us/support" class="mchp-link__link" aria-label="Technical Support">Technical Support</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -351,7 +348,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a target="_blank" href="https://www.microchip.com/exportcontroldata/" class="mchp-link__link" aria-label="Export Control Data">Export Control Data</a>
+                  <a target="_blank" data-mchp-footer-link="exportControlData" href="https://www.microchip.com/exportcontroldata/" class="mchp-link__link" aria-label="Export Control Data">Export Control Data</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -359,7 +356,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--last">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/support/product-change-notification" class="mchp-link__link" aria-label="PCNs">PCNs</a>
+                  <a data-mchp-footer-link="pcns" href="https://www.microchip.com/en-us/support/product-change-notification" class="mchp-link__link" aria-label="PCNs">PCNs</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -381,7 +378,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--first">
               <div class="link">
                 <div>
-                  <a target="_blank" href="https://www.microchipdirect.com/" class="mchp-link__link" aria-label="microchipDIRECT.com">microchipDIRECT.com</a>
+                  <a target="_blank" data-mchp-footer-link="microchipDirect" href="https://www.microchipdirect.com/" class="mchp-link__link" aria-label="microchipDIRECT.com">microchipDIRECT.com</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -389,7 +386,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a target="_blank" href="https://secure.microchip.com/mu" class="mchp-link__link" aria-label="Microchip University">Microchip University</a>
+                  <a target="_blank" data-mchp-footer-link="microchipUniversity" href="https://secure.microchip.com/mu" class="mchp-link__link" aria-label="Microchip University">Microchip University</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -397,7 +394,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/mymicrochip/" class="mchp-link__link" aria-label="myMicrochip">myMicrochip</a>
+                  <a data-mchp-footer-link="myMicrochip" href="https://www.microchip.com/mymicrochip/" class="mchp-link__link" aria-label="myMicrochip">myMicrochip</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -405,7 +402,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/media-center/blog" class="mchp-link__link" aria-label="Blogs">Blogs</a>
+                  <a data-mchp-footer-link="blogs" href="https://www.microchip.com/en-us/about/media-center/blog" class="mchp-link__link" aria-label="Blogs">Blogs</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -413,7 +410,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/tools-resources/reference-designs" class="mchp-link__link" aria-label="Reference Designs">Reference Designs</a>
+                  <a data-mchp-footer-link="referenceDesigns" href="https://www.microchip.com/en-us/tools-resources/reference-designs" class="mchp-link__link" aria-label="Reference Designs">Reference Designs</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -421,7 +418,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--last">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/products/selection-tools/parametric-search-landing-page" class="mchp-link__link" aria-label="Parametric Search">Parametric Search</a>
+                  <a data-mchp-footer-link="parametricSearch" href="https://www.microchip.com/en-us/products/selection-tools/parametric-search-landing-page" class="mchp-link__link" aria-label="Parametric Search">Parametric Search</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -450,7 +447,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
               <div class="mchp-component-item mchp-component-item--first">
                 <div class="image">
                   <div class="cmp-image">
-                    <a class="cmp-image__link" href="https://www.facebook.com/microchiptechnology/" aria-label="Microchip Facebook" target="_blank">
+                    <a class="cmp-image__link" data-mchp-footer-link="facebook" href="https://www.facebook.com/microchiptechnology/" aria-label="Microchip Facebook" target="_blank">
                       <img class="cmp-image__image" alt="Microchip Facebook" src="oxygen-webhelp/template/resources/images/facebook-icon.png"/>
                     </a>
                   </div>
@@ -459,7 +456,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
               <div class="mchp-component-item">
                 <div class="image">
                   <div class="cmp-image">
-                    <a class="cmp-image__link" href="https://www.linkedin.com/company/microchip-technology" aria-label="Microchip LinkedIn" target="_blank">
+                    <a class="cmp-image__link" data-mchp-footer-link="linkedin" href="https://www.linkedin.com/company/microchip-technology" aria-label="Microchip LinkedIn" target="_blank">
                       <img class="cmp-image__image" alt="Microchip LinkedIn" src="oxygen-webhelp/template/resources/images/linkedin-icon.png"/>
                     </a>
                   </div>
@@ -468,7 +465,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
               <div class="mchp-component-item">
                 <div class="image">
                   <div class="cmp-image">
-                    <a class="cmp-image__link" href="https://x.com/MicrochipTech" aria-label="Microchip Twitter" target="_blank">
+                    <a class="cmp-image__link" data-mchp-footer-link="twitter" href="https://x.com/MicrochipTech" aria-label="Microchip Twitter" target="_blank">
                       <img class="cmp-image__image" alt="Microchip Twitter" src="oxygen-webhelp/template/resources/images/twitter-new.png"/>
                     </a>
                   </div>
@@ -477,7 +474,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
               <div class="mchp-component-item">
                 <div class="image">
                   <div class="cmp-image">
-                    <a class="cmp-image__link" href="https://www.youtube.com/user/MicrochipTechnology" aria-label="Image Hyperlink" target="_blank">
+                    <a class="cmp-image__link" data-mchp-footer-link="youtube" href="https://www.youtube.com/user/MicrochipTechnology" aria-label="Image Hyperlink" target="_blank">
                       <img class="cmp-image__image" alt="" src="oxygen-webhelp/template/resources/images/youtube-icon.png"/>
                     </a>
                   </div>
@@ -486,7 +483,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
               <div class="mchp-component-item">
                 <div class="image">
                   <div class="cmp-image">
-                    <a class="cmp-image__link" href="https://www.instagram.com/microchiptechnologyinc/" aria-label="Microchip Instagram" target="_blank">
+                    <a class="cmp-image__link" data-mchp-footer-link="instagram" href="https://www.instagram.com/microchiptechnologyinc/" aria-label="Microchip Instagram" target="_blank">
                       <img class="cmp-image__image" alt="Microchip Instagram" src="oxygen-webhelp/template/resources/images/instagram-icon.png"/>
                     </a>
                   </div>
@@ -495,7 +492,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
               <div class="mchp-component-item mchp-component-item--last">
                 <div class="image">
                   <div class="cmp-image">
-                    <a class="cmp-image__link" href="https://www.weibo.com/microchiptech" aria-label="Microchip Weibo" target="_blank">
+                    <a class="cmp-image__link" data-mchp-footer-link="weibo" href="https://www.weibo.com/microchiptech" aria-label="Microchip Weibo" target="_blank">
                       <img class="cmp-image__image" alt="Microchip Weibo" src="oxygen-webhelp/template/resources/images/snap.png"/>
                     </a>
                   </div>
@@ -520,7 +517,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--first">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/legal-information/website-terms-and-conditions" class="mchp-link__link" aria-label="Terms Of Use">Terms Of Use</a>
+                  <a data-mchp-footer-link="termsOfUse" href="https://www.microchip.com/en-us/about/legal-information/website-terms-and-conditions" class="mchp-link__link" aria-label="Terms Of Use">Terms Of Use</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -528,7 +525,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/legal-information/privacy-notice" class="mchp-link__link" aria-label="Privacy Notice">Privacy Notice</a>
+                  <a data-mchp-footer-link="privacyNotice" href="https://www.microchip.com/en-us/about/legal-information/privacy-notice" class="mchp-link__link" aria-label="Privacy Notice">Privacy Notice</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -536,7 +533,7 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
             <div class="mchp-component-item mchp-component-item--last">
               <div class="link">
                 <div>
-                  <a href="https://www.microchip.com/en-us/about/legal-information" class="mchp-link__link" aria-label="Legal">Legal</a>
+                  <a data-mchp-footer-link="legal" href="https://www.microchip.com/en-us/about/legal-information" class="mchp-link__link" aria-label="Legal">Legal</a>
                   <span class="mchp-link__separator"></span>
                 </div>
               </div>
@@ -582,6 +579,10 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
 <script type="text/javascript" src="mchp-js/onetrust.js"></script>
 <!-- Package for viewing PDFs on mobile devices -->
 <script type="text/javascript" src="mchp-js/common.js"></script>
+<!-- Update footer destinations from the configured endpoint, keeping published URLs as fallback. -->
+<script type="text/javascript" src="oxygen-webhelp/template/resources/js/footer-links.js"></script>
+<!-- Preserve the Oxygen 28.1 Markdown menu if its standard initializer fails. -->
+<script type="text/javascript" src="oxygen-webhelp/template/resources/js/markdown-menu-fallback.js"></script>
 
 <script><!--
 
@@ -647,12 +648,13 @@ crc_val = CLASSB_FlashCRCGenerate(start_addr, size);</code></pre>
 
 
 --></script>
+
   </div>
 </footer>
         
-        <div id="go2top" class="d-print-none">
+        <button id="go2top" class="d-print-none" title="Go to top">
             <span class="oxy-icon oxy-icon-up"></span>
-        </div>
+        </button>
         
         <div id="modal_img_large" class="modal">
             <span class="close oxy-icon oxy-icon-remove"></span>
