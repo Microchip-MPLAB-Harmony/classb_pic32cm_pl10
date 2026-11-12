@@ -52,7 +52,7 @@ The following applications are provided to demonstrate the typical or interestin
 
 | Devices Family | Status |
 | --- | :---: |
-| PIC32CM PL10 | ![middleware-release](https://img.shields.io/badge/middleware-release-green?style=plastic) |
+| [PIC32CM PL10](docs/index.html) | ![middleware-release](https://img.shields.io/badge/middleware-release-green?style=plastic) |
 
 ____
 
