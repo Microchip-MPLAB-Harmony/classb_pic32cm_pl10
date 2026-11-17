@@ -9,7 +9,7 @@
         "projectName": "classb_api_usage",
         "shortDescription": "This example shows how to use the self-test APIs from the Class B library",
         "ide": {
-            "name": "MPLABX",
+            "name": "MPLAB X",
             "semverRange": ">=6.20.0"
         },
         "compiler": [
@@ -57,7 +57,7 @@
                 "category": "com.microchip.portal.fileRef",
                 "content": {
                     "metaDataVersion": "1.0.0",
-                    "fileName": "../../readme.md",
+                    "fileName": "../readme.md",
                     "mimeType": "text/markdown"
                 }
             }
