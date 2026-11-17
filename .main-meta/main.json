@@ -1,0 +1,66 @@
+{
+    "metaDataVersion": "1.0.0",
+    "category": "com.microchip.ide.project",
+    "content": {
+        "metaDataVersion": "1.3.0",
+        "name": "com.microchip.mcu32.mplabx.project.pic32cm_pl10_classb_api_usage__classb_api_usage",
+        "version": "1.0.0",
+        "displayName": "Class B API Usage",
+        "projectName": "classb_api_usage",
+        "shortDescription": "This example shows how to use the self-test APIs from the Class B library",
+        "ide": {
+            "name": "MPLABX",
+            "semverRange": ">=6.20.0"
+        },
+        "compiler": [
+            {
+                "name": "XC32",
+                "semverRange": ">=4.39.0"
+            }
+        ],
+        "dfp": {
+            "name": "PIC32CM-PL_DFP",
+            "semverRange": "^1.4.418"
+        },
+        "configurator": {
+            "name": "MCC",
+            "semverRange": ">=5.5.1"
+        },
+        "device": {
+            "metaDataVersion": "1.0.0",
+            "category": "com.microchip.portal.contentRef",
+            "content": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.device",
+                "name": "PIC32CM6408PL10048",
+                "versionRange": "*"
+            }
+        },
+        "author": "Microchip",
+        "peripherals": [
+            "Clock",
+            "SRAM",
+            "Flash",
+            "INT",
+            "GPIO"
+        ],
+        "keywords": [
+            "MCC",
+            "Harmony",
+            "Class B",
+            "FuSa",
+            "Functional Safety"
+        ],
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "../../readme.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
+}
